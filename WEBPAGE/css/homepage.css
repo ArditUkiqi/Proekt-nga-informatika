@@ -1,0 +1,318 @@
+
+@import "index.css"; 
+
+
+@keyframes changeDisplay {
+    from{
+        display: none;
+    }
+
+    to{
+        display: initial;
+    }
+}
+
+@keyframes changeOpacityForwards {
+   0%{
+    opacity: 0.3;
+   }
+   10%{
+    opacity: 0.4;   
+    }
+    20%{
+    opacity: 0.5;       
+    }
+    30%{
+     opacity: 0.5;  
+    }
+    40%{
+       opacity: 0.5;
+}
+    50%{
+      opacity: 0.5; 
+}
+    60%{
+      opacity: 0.5; 
+    }
+    70%{
+    opacity: 0.5;
+    }
+    80%{
+       opacity: 0.6;
+    }
+    80%{
+       opacity: 0.5;
+}
+    100%{
+       opacity: 0.4;
+}
+}
+
+@keyframes changeOpacityBackwards {
+    from {
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes moveUpDown {
+0%{
+        margin-top: 170px;
+    }    
+10%{
+    margin-top: 173px;
+}
+
+20%{
+    margin-top: 176px;
+}
+30%{
+    margin-top: 179px;
+}
+40%{
+    margin-top: 182px;
+}
+50%{
+    margin-top: 184px;
+}
+60%{
+    margin-top: 182px;
+}
+70%{
+    margin-top: 179px;
+}
+80%{
+    margin-top: 176px;
+}
+90%{
+    margin-top: 173px;
+}
+100%{
+    margin-top: 170px;
+}
+}
+
+
+
+.slogan p{
+    margin: 250px 0 250px;
+    text-align: center;
+    background-image: linear-gradient(to right, #dc2424, #4a569d); 
+    /* -webkit-background-clip: text;
+    -moz-background-clip: text; */
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+ }
+
+
+ 
+ 
+ 
+ 
+ 
+  @media screen and (min-width : 760px){
+    .aboutUs {height: 180px;}
+   .slogan p{animation: textAnimation 2s ease-in 1; font-size: 90px;}
+   #forPhone{
+    visibility: visible;
+    
+     }
+  }
+
+
+  .banner{
+height: 800px;
+  }
+
+.banner{
+   
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner video{
+    
+    animation: showOnScreen 3s;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    
+}
+
+.ardit{
+    animation: showOnScreen 3s ;
+}
+.web{
+    animation: showOnScreen 0.2s ;
+}
+.webs{
+    animation: showOnScreen 1s ;
+}
+
+.webt{
+    animation: showOnScreen 2s ;
+}
+
+.banner h2{
+    animation: showOnScreen 1s;
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    text-align: center;
+    background: white;
+    animation: changeOpacityForwards 7s 1;
+    font-size: 15vw;
+    color:black;
+    line-height:  90vh;
+    mix-blend-mode: screen;
+ }
+
+.banner h3 {
+    
+  /*  background: -webkit-linear-gradient(to right, #feac5e,#0b8793, #4bc0c8);*/
+   color:rgba(39, 157, 141, 1);
+ 
+   animation: moveUpDown 1.5s infinite;
+   animation: changeDisplay 18s ;
+    margin-top: 170px;
+    position: absolute;
+    text-align: center;
+    background: transparent;
+    
+
+}
+
+.banner h3 a:hover {
+    color:#feac5e;
+}
+
+
+
+.banerimg{
+    height: 50px;
+}
+
+ #forPhone{
+visibility: hidden;
+pointer-events: none;
+
+ }
+
+footer{
+margin-top: 0;
+
+}
+
+
+ @media screen and (max-width : 760px){
+
+    
+
+    .banner h2{
+        font-size: 40vw;
+
+    }
+
+    .web{
+        display: block;
+    }
+    .ardit{
+       display: none;
+    }
+   }
+ 
+
+   .aboutUs{
+       
+       border: 10px linear-gradient(to right, #feac5e,#0b8793, #4bc0c8);
+       background: linear-gradient(to right, #feac5e,#0b8793, #4bc0c8);
+    display: grid;
+    border-radius: 30px;
+    
+    margin: 50px 200px 50px 200px;
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr 2fr ;
+    
+   }
+
+   .aboutUs img{
+    margin: 15px 15px;
+     
+       height: 150px;
+       width: 150px;
+   }
+
+   .aboutUs p{
+    margin: 15px 15px;
+     font-size: 20px;
+     color: white;
+   }
+
+
+.banner a{
+    text-decoration: none;
+    color:rgba(39, 157, 141, 1);
+    cursor: hand;
+}
+
+    @media screen and (max-width : 760px){
+        .banner h3 {
+           
+           margin-top: 200px;
+           
+           
+       
+       }
+
+ .ardit {
+    margin-top: -450px;
+ }
+
+    .aboutUs {
+        
+        margin:10px 50px 10px 50px;
+        display: block;
+    }
+
+    .aboutUs img{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    
+         height: 80px;
+         width: 80px;
+     }
+  
+     .aboutUs p{
+    
+      margin: 0 30px 0 30px;
+       font-size: 12px;
+       color: white;
+       padding-bottom: 50px;
+     }
+
+     .fir{
+         height: 180px;
+     }
+
+}
+   
+
+
+.fir p{
+    margin: 0 auto;
+    text-align: center;
+
+}

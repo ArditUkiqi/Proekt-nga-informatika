@@ -1,0 +1,75 @@
+
+@keyframes changeBorderColor{
+   
+    25%{
+        border-top: 2px solid lightskyblue;
+    }
+    50%{
+        border-right: 2px solid lightskyblue;
+    }
+    75%{
+        border-bottom: 2px solid lightskyblue;
+    }
+
+    100%{
+        border-left: 2px solid lightskyblue;
+    }
+
+}
+.main{
+    width: 80%;
+    margin: auto;
+}
+.main img {
+    width: 700px;
+    height: 400px;
+    margin: auto;
+}
+
+.main p {
+    text-align: justify;
+    padding: 20px 50px 20px 50px;
+    color: lightcoral;
+    font-size: 30px;
+}
+
+.firstContainer {
+    display: flex;
+    justify-content: center;
+}
+
+
+table
+{
+ width: 700px;
+ border: 2px solid lightcoral;
+ margin: auto;
+ animation: changeBorderColor 1s infinite;
+ 
+}
+tr{
+    border-bottom: 2px solid lightcoral;
+    
+}
+
+tr td:nth-child(1){
+    border-right: 10px solid lightcoral;
+    
+}
+
+tr td {
+    padding : 10px;
+}
+
+tr td a{
+    color: lightseagreen;
+    text-decoration: none;
+}
+
+tr td a:hover {
+    color: lightskyblue;
+}
+
+
+
+
